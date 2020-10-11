@@ -3,6 +3,9 @@ def printer(func):
         print("Function {} has received  values of {} and {}" .format(func.__name__, x, y))
         output = func(x, y)
         print("Output of the {}  function is {}".format(func.__name__, output))
+        #return func(x, y) would run the some_function again, while this is not neccecary for this decorator
+        #return func(x, y)
+        #Return output returns the result of the somefunction to the main function
         return output
     return printer_simple
 
