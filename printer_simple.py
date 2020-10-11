@@ -1,6 +1,6 @@
 def printer(func):
     def printer_simple(x, y):
-        print("inputed values are {} and {}" .format(x, y))
+        print("Function {} has received  values of {} and {}" .format(func.__name__, x, y))
     return printer_simple
 
 @printer
