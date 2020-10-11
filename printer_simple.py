@@ -3,6 +3,7 @@ def printer(func):
         print("Function {} has received  values of {} and {}" .format(func.__name__, x, y))
         output = func(x, y)
         print("Output of the {}  function is {}".format(func.__name__, output))
+        return output
     return printer_simple
 
 @printer
