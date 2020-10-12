@@ -12,7 +12,7 @@ def checker_if_kwarg_none(func):
 @checker_if_kwarg_none
 def some_function(**kwargs):
     var2 = kwargs['var2']
-    return var2
+    return var2, 5555
 
 def main():
     paramethers = {
