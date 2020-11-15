@@ -1,4 +1,4 @@
-def funtion_input(func):
+def function_input(func):
     def print_input_type(user_input):
         try:
             val = int(user_input)
@@ -12,7 +12,7 @@ def funtion_input(func):
             return func(user_input)
     return print_input_type
 
-@funtion_input
+@function_input
 def test_function(user_input):
     print('This is test function with user input: {}' .format(user_input))
 
