@@ -9,7 +9,7 @@ def function_input(func):
                 print("Input is a float  number. Number = ", val)
             except ValueError:
                 print("No.. input is not a number. It's a string")
-            return func(user_input)
+        return func(user_input)
     return print_input_type
 
 @function_input
