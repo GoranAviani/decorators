@@ -1,11 +1,11 @@
 def funtion_input(func):
-    def print_input_type(x, y):
+    def print_input_type():
 
-            return func(x, y)
+            return func()
     return print_input_type
 
 @funtion_input
-def test_function(x, y):
+def test_function():
     print('This is test function!')
 
 
