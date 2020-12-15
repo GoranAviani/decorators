@@ -8,7 +8,7 @@ def result_printer(result):
 def checker_if_kwarg_none(func):
     def checker(**kwargs):
         for name, value in kwargs.items():
-            if value == None:
+            if value is None:
                 return None
 
         return func(**kwargs)
