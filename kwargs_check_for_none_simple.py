@@ -1,3 +1,8 @@
+def result_printer(result):
+    if result == None:
+        print('One or more vars are empty')
+    print(result)
+
 
 def checker_if_kwarg_none(func):
     def checker(**kwargs):
@@ -20,18 +25,14 @@ def main():
      'var2': 9999999
     }
     result = some_function(**paramethers)
-    if result == None:
-        print('One or more vars are empty')
-    print(result)
+    result_printer(result)
 
     paramethers = {
         'var1': 1,
         'var2': None
     }
     result = some_function(**paramethers)
-    if result == None:
-        print('One or more vars are empty')
-    print(result)
+    result_printer(result)
 
 if __name__ == '__main__':
     main()
