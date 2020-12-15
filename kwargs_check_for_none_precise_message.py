@@ -1,15 +1,13 @@
 def result_printer(result):
-    if result == None:
-        print('One or more vars are empty')
-    else:
-        print(result)
+    print('Variable {} has a None value {}' .format(result['name'], result['result']))
 
 
 def checker_if_kwarg_none(func):
     def checker(**kwargs):
         for name, value in kwargs.items():
             if value is None:
-                return None
+                result_printer({'result': None, 'key_name': name})
+                exit()
 
         return func(**kwargs)
     return checker
@@ -27,14 +25,12 @@ def main():
      'var2': 9999999
     }
     result = some_function(**paramethers)
-    result_printer(result)
 
     paramethers = {
         'var1': 1,
         'var2': None
     }
     result = some_function(**paramethers)
-    result_printer(result)
 
 if __name__ == '__main__':
     main()
