@@ -1,6 +1,19 @@
+class color:
+   PURPLE = '\033[95m'
+   CYAN = '\033[96m'
+   DARKCYAN = '\033[36m'
+   BLUE = '\033[94m'
+   GREEN = '\033[92m'
+   YELLOW = '\033[93m'
+   RED = '\033[91m'
+   BOLD = '\033[1m'
+   UNDERLINE = '\033[4m'
+   END = '\033[0m'
+
+
 def result_printer(result):
     print('Variable {} has a value of None ({}).' .format(result['key_name'], result['result']))
-    print('Exit app')
+    print(color.BOLD + 'Exit app !' + color.END)
 
 
 def checker_if_kwarg_none(func):
