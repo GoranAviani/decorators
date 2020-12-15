@@ -1,6 +1,6 @@
 def result_printer(result):
     print('Variable {} has a value of None ({}).' .format(result['key_name'], result['result']))
-    print('Exsiting app')
+    print('Exit app')
 
 
 def checker_if_kwarg_none(func):
