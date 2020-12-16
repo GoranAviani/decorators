@@ -10,7 +10,7 @@ class color:
    UNDERLINE = '\033[4m'
    END = '\033[0m'
 
-SNIPPET_NAME = 'Is kwarg none snippet: '
+SNIPPET_NAME = 'generator_kwargs_checker: '
 
 
 def failure_printer(result):
