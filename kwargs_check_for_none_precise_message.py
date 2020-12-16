@@ -11,10 +11,12 @@ class color:
    END = '\033[0m'
 
 SNIPPET_NAME = 'kwargs_check_decorator: '
+ERROR_INTRO_MESSAGE = 'Error message: '
 
 
 def failure_printer(result):
-    print(SNIPPET_NAME +'Variable {} has a value of {} .. (None).' .format(result['key_name'], result['result']))
+    print(color.RED + SNIPPET_NAME + ERROR_INTRO_MESSAGE +'Variable {} has a value of {} .. (None).'
+          .format(result['key_name'], result['result']))
     print(color.BOLD + color.RED + SNIPPET_NAME +'Stopping the program and exiting the decorator')
 
 
