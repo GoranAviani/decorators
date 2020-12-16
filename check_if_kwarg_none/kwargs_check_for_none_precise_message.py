@@ -1,3 +1,9 @@
+from .constants import (
+    color,
+    SNIPPET_NAME,
+    ERROR_INTRO_MESSAGE
+)
+
 def failure_printer(result):
     print(color.RED + SNIPPET_NAME + ERROR_INTRO_MESSAGE +'Variable {} has a value of {} .. (None).'
           .format(result['key_name'], result['result']))
