@@ -1,8 +1,4 @@
-from .constants import (
-    color,
-    DECORATOR_NAME,
-    ERROR_INTRO_MESSAGE
-)
+from check_if_kwarg_none.constants import color, DECORATOR_NAME, ERROR_INTRO_MESSAGE
 
 def failure_printer(result):
     print(color.RED + DECORATOR_NAME + ERROR_INTRO_MESSAGE +'Variable {} has a value of {} .. (None).'
