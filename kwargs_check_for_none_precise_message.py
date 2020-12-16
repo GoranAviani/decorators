@@ -13,7 +13,7 @@ class color:
 
 def result_printer(result):
     print('Variable {} has a value of None ({}).' .format(result['key_name'], result['result']))
-    print(color.BOLD + 'Exit app !' + color.END)
+    print(color.BOLD + 'Exit app..' + color.END)
 
 
 def checker_if_kwarg_none(func):
