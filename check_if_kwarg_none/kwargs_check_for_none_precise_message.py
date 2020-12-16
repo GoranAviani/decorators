@@ -7,8 +7,8 @@ from check_if_kwarg_none.constants import (
 
 
 def failure_printer(result):
-    print(color.RED + DECORATOR_NAME + ERROR_INTRO_MESSAGE +'Function: {} has kwarg paramether {} with a value of {} .. (None).'
-          .format(result['function_name'], result['key_name'], result['result']))
+    print(color.RED + DECORATOR_NAME + ERROR_INTRO_MESSAGE + color.BOLD + result['function_name'] + color.END + color.RED + ' function has kwarg paramether {} with a value of {} .. (None).'
+          .format(result['key_name'], result['result']))
     print(color.BOLD + color.RED + DECORATOR_NAME +'Stopping the program and exiting the decorator')
 
 
