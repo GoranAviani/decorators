@@ -10,12 +10,12 @@ class color:
    UNDERLINE = '\033[4m'
    END = '\033[0m'
 
-SNIPPET_NAME = 'generator_kwargs_checker: '
+SNIPPET_NAME = 'kwargs_check_decorator: '
 
 
 def failure_printer(result):
     print(SNIPPET_NAME +'Variable {} has a value of {} .. (None).' .format(result['key_name'], result['result']))
-    print(color.BOLD + color.RED + SNIPPET_NAME +'Exit app..')
+    print(color.BOLD + color.RED + SNIPPET_NAME +'Stopping the program and exiting the decorator')
 
 
 def checker_if_kwarg_none(func):
