@@ -10,5 +10,5 @@ class color:
    UNDERLINE = '\033[4m'
    END = '\033[0m'
 
-SNIPPET_NAME = 'kwargs_check_decorator: '
+DECORATOR_NAME = 'kwargs_check_decorator: '
 ERROR_INTRO_MESSAGE = 'Error message: '

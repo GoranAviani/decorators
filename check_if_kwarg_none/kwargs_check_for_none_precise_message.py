@@ -1,13 +1,13 @@
 from .constants import (
     color,
-    SNIPPET_NAME,
+    DECORATOR_NAME,
     ERROR_INTRO_MESSAGE
 )
 
 def failure_printer(result):
-    print(color.RED + SNIPPET_NAME + ERROR_INTRO_MESSAGE +'Variable {} has a value of {} .. (None).'
+    print(color.RED + DECORATOR_NAME + ERROR_INTRO_MESSAGE +'Variable {} has a value of {} .. (None).'
           .format(result['key_name'], result['result']))
-    print(color.BOLD + color.RED + SNIPPET_NAME +'Stopping the program and exiting the decorator')
+    print(color.BOLD + color.RED + DECORATOR_NAME +'Stopping the program and exiting the decorator')
 
 
 def checker_if_kwarg_none(func):
