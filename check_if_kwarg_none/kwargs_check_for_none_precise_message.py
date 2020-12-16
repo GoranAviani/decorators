@@ -5,8 +5,8 @@ from check_if_kwarg_none.constants import (
 )
 
 def failure_printer(result):
-    print(color.RED + DECORATOR_NAME + ERROR_INTRO_MESSAGE +'Variable {} has a value of {} .. (None).'
-          .format(result['key_name'], result['result']))
+    print(color.RED + DECORATOR_NAME + ERROR_INTRO_MESSAGE +'Functions: ' + color.BOLD + '{} kwarg paramether {} has a value of {} .. (None).'
+          .format(result['function_name'], result['key_name'], result['result']))
     print(color.BOLD + color.RED + DECORATOR_NAME +'Stopping the program and exiting the decorator')
 
 
@@ -17,10 +17,11 @@ def checker_if_kwarg_none(func):
     :param func:
     :return: If no kwarg values are not none: passing kwargs paramethers to a called function
     """
+    function_name = func.__name__
     def checker(**kwargs):
         for name, value in kwargs.items():
             if value is None:
-                failure_printer({'result': None, 'key_name': name})
+                failure_printer({'result': None, 'key_name': name, 'function_name': function_name})
                 exit()
 
         return func(**kwargs)
