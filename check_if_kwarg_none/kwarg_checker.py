@@ -1,4 +1,4 @@
-from check_if_kwarg_none.constants import (
+from check_if_kwarg_none.kwarg_checker_constants import (
     color,
     DECORATOR_NAME,
     ERROR_INTRO_MESSAGE
