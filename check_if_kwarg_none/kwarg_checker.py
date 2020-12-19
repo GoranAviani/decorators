@@ -12,7 +12,7 @@ def failure_printer(result):
     print(color.BOLD + color.RED + DECORATOR_NAME +'Stopping the program and exiting the decorator')
 
 
-def checker_if_kwarg_none(func):
+def check_if_kwarg_none(func):
     """
     This decorator checks if any value of a given kwarg is None. If any is none decorator stops execution of the code
     and outputs the needed message.
