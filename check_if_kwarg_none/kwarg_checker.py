@@ -9,7 +9,7 @@ from check_if_kwarg_none.kwarg_checker_constants import (
 def failure_printer(result_paramether: dict):
     """
     Intention of this fun is to print when kwargs value is None.
-    :param result:
+    :param result: dict holding neccecary paramethers that need to be displayed to the user
     :return: n/a
     """
     print(color.RED + DECORATOR_NAME + ERROR_INTRO_MESSAGE + color.BOLD + result_paramether['function_name'] + color.END + color.RED + ' function has kwarg paramether {} with a value of {} .. (None).'
