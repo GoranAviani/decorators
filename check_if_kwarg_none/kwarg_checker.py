@@ -13,7 +13,7 @@ def failure_printer(result_paramether: dict):
     :return: n/a
     """
     print(color.RED + DECORATOR_NAME + ERROR_INTRO_MESSAGE + color.BOLD + result_paramether['function_name'] + color.END + color.RED + ' function has kwarg paramether {} with a value of {} .. (None).'
-          .format(result_paramether['key_name'], result_paramether['result']))
+          .format(result_paramether['kwarg_key'], result_paramether['kwarg_value']))
     print(color.BOLD + color.RED + DECORATOR_NAME +'Stopping the program and exiting the decorator')
 
 
