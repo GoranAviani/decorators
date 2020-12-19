@@ -1,4 +1,4 @@
-from check_if_kwarg_none.kwargs_check_for_none_precise_message import checker_if_kwarg_none
+from check_if_kwarg_none.kwarg_checker import checker_if_kwarg_none
 
 @checker_if_kwarg_none
 def some_function(**kwargs):
