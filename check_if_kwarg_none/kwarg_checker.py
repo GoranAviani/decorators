@@ -19,7 +19,8 @@ def failure_printer(result_paramether: dict):
 
 def check_if_kwarg_none(func):
     """
-    This decorator checks if any value of a given kwarg is None. If any is none decorator stops execution of the code
+    This decorator checks if any value from the key value pairs of a given kwarg is None.
+    If any value is none decorator stops execution of the code
     and outputs the needed message.
     :param func:
     :return: If no kwarg values are not none: passing kwargs paramethers to a called function
